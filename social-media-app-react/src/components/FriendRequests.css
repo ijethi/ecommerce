@@ -1,0 +1,75 @@
+/* src/components/FriendRequests.css */
+
+/* Dalhousie University Colors */
+:root {
+  --dal-gold: #FFC72C;
+  --dal-black: #000000;
+  --dal-grey: #4B4B4B;
+  --dal-white: #FFFFFF;
+}
+
+.friend-requests {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--dal-white);
+  font-family: Arial, sans-serif;
+}
+
+.friend-requests h3 {
+  text-align: center;
+  color: var(--dal-black);
+  margin-bottom: 20px;
+}
+
+.friend-requests ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.friend-requests li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dal-grey);
+  color: var(--dal-white);
+  border: 1px solid var(--dal-black);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.friend-requests button {
+  background-color: var(--dal-gold);
+  color: var(--dal-black);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: auto;
+  min-width: 200px;
+}
+
+.friend-requests button:hover {
+  background-color: var(--dal-black);
+  color: var(--dal-gold);
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  color: var(--dal-black);
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 10px;
+  width: 250px;
+  height: auto;
+}

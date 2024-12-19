@@ -1,0 +1,155 @@
+:root {
+  --dal-gold: #FFC72C;
+  --dal-black: #000000;
+  --dal-grey: #4B4B4B;
+  --dal-white: #FFFFFF;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--dal-white);
+}
+
+.landing-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--dal-white);
+}
+
+.main-content {
+  flex: 3;
+  margin-right: 20px;
+  border: 1px solid var(--dal-grey);
+  border-radius: 8px;
+  background-color: var(--dal-white);
+  padding: 40px;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.post-section {
+  margin-top: 20px;
+}
+
+.post-section h3 {
+  color: var(--dal-black);
+}
+
+.post-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-section li {
+  background-color: var(--dal-grey);
+  color: var(--dal-white);
+  border: 1px solid var(--dal-black);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.post-section li strong {
+  color: var(--dal-gold);
+}
+
+.add-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.add-post textarea {
+  width: 100%;
+  max-width: 600px;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--dal-black);
+  resize: none;
+}
+
+.add-post button {
+  background-color: var(--dal-gold);
+  color: var(--dal-black);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  max-width: 630px;
+}
+
+.add-post button:hover {
+  background-color: var(--dal-black);
+  color: var(--dal-gold);
+}
+
+/* Friend Recommendations */
+.friend-recommendations {
+  background-color: var(--dal-grey);
+  color: var(--dal-white);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.friend-recommendations h3 {
+  color: var(--dal-gold);
+  margin-bottom: 20px;
+}
+
+.friend-recommendations ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.friend-recommendations li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dal-white);
+  color: var(--dal-black);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--dal-black);
+}
+
+.friend-recommendations li span {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.friend-recommendations button {
+  background-color: var(--dal-gold);
+  color: var(--dal-black);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.friend-recommendations button:hover {
+  background-color: var(--dal-black);
+  color: var(--dal-gold);
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 10px;
+  width: 250px;
+  height: auto;
+}
+
+.welcome-text {
+  text-align: center; 
+  margin: 0;
+  padding: 10px 0;
+  color: var(--dal-black);
+}

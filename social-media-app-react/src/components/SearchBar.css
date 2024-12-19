@@ -1,0 +1,20 @@
+:root {
+    --dal-gold: #FFC72C;
+    --dal-black: #000000;
+    --dal-grey: #4B4B4B;
+    --dal-white: #FFFFFF;
+  }
+  
+  .search-bar {
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--dal-grey);
+    box-sizing: border-box;
+  }
+  

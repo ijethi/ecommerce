@@ -1,0 +1,30 @@
+:root {
+    --dal-gold: #FFC72C;
+    --dal-black: #000000;
+    --dal-grey: #4B4B4B;
+    --dal-white: #FFFFFF;
+  }
+  
+  .friend-profile {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--dal-white);
+    font-family: Arial, sans-serif;
+  }
+  
+  .friend-profile h2 {
+    text-align: center;
+    color: var(--dal-black);
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    display: block;
+    margin: 0 auto 10px;
+    width: 250px;
+    height: auto;
+  }
+  

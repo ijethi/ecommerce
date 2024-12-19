@@ -1,0 +1,43 @@
+stages:
+  - backend-build
+  - frontend-build
+
+backend-build:
+  image: maven:3.8.4-openjdk-17
+  stage: backend-build
+  script:
+    - echo "Starting backend build"
+    - cd social-media-app
+    - cd social-media-app
+    - mvn clean install
+  artifacts:
+    paths:
+      - social-media-app/target/*.jar
+    expire_in: 1 week
+
+frontend-build:
+  image: node:16
+  stage: frontend-build
+  script:
+    - echo "Starting frontend build"
+    - cd social-media-app-react
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - social-media-app-react/build
+    expire_in: 1 week
+
+backend-tests:
+  image: maven:3.8.4-openjdk-17
+  stage: backend-build
+  script:
+    - echo "Running backend tests"
+    - cd social-media-app
+    - cd social-media-app
+    - mvn test
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - social-media-app/social-media-app/target/surefire-reports/TEST-*.xml

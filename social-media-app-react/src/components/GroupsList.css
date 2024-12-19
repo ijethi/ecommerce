@@ -1,0 +1,54 @@
+:root {
+    --dal-gold: #FFC72C;
+    --dal-black: #000000;
+    --dal-grey: #4B4B4B;
+    --dal-white: #FFFFFF;
+  }
+  
+  .groups-list {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--dal-white);
+    font-family: Arial, sans-serif;
+  }
+  
+  .groups-list h3 {
+    text-align: center;
+    color: var(--dal-black);
+    margin-bottom: 20px;
+  }
+  
+  .groups-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .groups-list li {
+    background-color: var(--dal-grey);
+    color: var(--dal-white);
+    border: 1px solid var(--dal-black);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    text-align: center;
+  }
+  
+  .groups-list li:hover {
+    background-color: var(--dal-black);
+    color: var(--dal-gold);
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+  }
+  
+  .loading {
+    text-align: center;
+    color: var(--dal-black);
+  }
+  
